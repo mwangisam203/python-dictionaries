@@ -44,6 +44,18 @@ print(y)            #Output: dict_items([('hobby', 'footbal'), ('career', 'tech'
 
 if "salary" in mysample:
     print("All set!!")  #Output: All set!!
-z = print(mysample.get("career")) #Output: tech
+z = print(mysample.get("career")) #Output: tech         # get() method dictionary.get(keyname, value)
 
-# get() method dictionary.get(keyname, value)
+mysample.update({"hobby": "swimming"}) 
+print(mysample)          #Output: {'hobby': 'swimming', 'career': 'tech', 'car': 'BMW', 'salary': '3M', 'house': 'mansion'}
+
+mysample.update({"fashion": "swaggy"})
+print(mysample)         #Output: {'hobby': 'swimming', 'career': 'tech', 'car': 'BMW', 'salary': '3M', 'house': 'mansion', 'fashion': 'swaggy'}
+
+mysample.popitem()
+print(mysample)   #Output: {'hobby': 'swimming', 'career': 'tech', 'car': 'BMW', 'salary': '3M', 'house': 'mansion'}    
+                 #NB: Removes item that was lastly added
+
+del mysample ["house"]
+print(mysample)    #Output {'hobby': 'swimming', 'career': 'tech', 'car': 'BMW', 'salary': '3M'}
+            #NB; del can remove the entire dict but will cause an error, in such cases, clear() method
