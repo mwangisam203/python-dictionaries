@@ -19,3 +19,8 @@ print(type(mydict)) #Output: < class 'dict' >
 #Use the dict() constructor to make a dictionary.
 simpledict = dict(name = "Jason", age = 30, country = "Kenya", job = "AI engineer")
 print(simpledict)   #Output: {'name': 'Jason', 'age': 30, 'country': 'Kenya', 'job': 'AI engineer'}
+
+x = print(simpledict.get("age")) #Output: 30
+
+#The keys() method will return a list of all the keys in the dictionary
+x = print(simpledict.keys())  #Output: dict_keys(['name', 'age', 'country', 'job'])
