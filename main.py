@@ -59,3 +59,38 @@ print(mysample)   #Output: {'hobby': 'swimming', 'career': 'tech', 'car': 'BMW',
 del mysample ["house"]
 print(mysample)    #Output {'hobby': 'swimming', 'career': 'tech', 'car': 'BMW', 'salary': '3M'}
             #NB; del can remove the entire dict but will cause an error, in such cases, clear() method
+
+
+#loops
+mydict = {
+
+  "brand" : "Mercedes",
+  "model" : "S550",
+  "model" : "GLE 63S",
+  "seats" : 5,
+  "year"  : 2024
+
+}
+for x in mydict:
+    print(x) #Output:brand
+              #model
+              #seats
+              #year
+
+for x in mydict.keys():
+    print(x)    #brand
+                # model
+                # seats
+                # year
+
+for x in mydict.values():
+    print(x)   #Output: #Mercedes
+                        # GLE 63S
+                        # 5
+                        # 2024
+
+for x, y in mydict.items():
+    print(x, y)   # Output: #brand Mercedes
+                            # model GLE 63S
+                            # seats 5
+                            # year 2024
