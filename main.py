@@ -24,3 +24,26 @@ x = print(simpledict.get("age")) #Output: 30
 
 #The keys() method will return a list of all the keys in the dictionary
 x = print(simpledict.keys())  #Output: dict_keys(['name', 'age', 'country', 'job'])
+
+
+mysample = {
+    "hobby": "footbal",
+    "career": "tech",
+    "car": "BMW",
+    "salary": "3M"
+}
+
+mysample["house"] = "mansion"  
+print(mysample)     #Output: {'hobby': 'footbal', 'career': 'tech', 'car': 'BMW', 'salary': '3M', 'house': 'mansion'}
+
+x = mysample.values()
+print(x)            #Output: dict_values(['footbal', 'tech', 'BMW', '3M', 'mansion'])
+
+y = mysample.items()    # => The items() method will return each item in a dictionary, as tuples in a list.
+print(y)            #Output: dict_items([('hobby', 'footbal'), ('career', 'tech'), ('car', 'BMW'), ('salary', '3M'), ('house', 'mansion')])
+
+if "salary" in mysample:
+    print("All set!!")  #Output: All set!!
+z = print(mysample.get("career")) #Output: tech
+
+# get() method dictionary.get(keyname, value)
