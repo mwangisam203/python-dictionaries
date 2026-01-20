@@ -127,3 +127,24 @@ elif score >= 80:
     print("B, good trial")
 else:
     print("Need to Improve!!")
+
+
+def new_sample(a, b):
+    return a + b, a / b
+
+results = new_sample(50, 10)
+print(results)
+
+
+def next_eq(x, y):
+    return{
+        "mul": x * y,
+        "sub": x - y,
+        "mod": x % y
+    }
+
+results = next_eq(18, 14)
+
+print(results["mod"])
+print(results["sub"])
+print(results["mul"])
