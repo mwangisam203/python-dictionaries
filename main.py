@@ -94,3 +94,36 @@ for x, y in mydict.items():
                             # model GLE 63S
                             # seats 5
                             # year 2024
+
+
+#Nested If 
+
+username = "Jeffrey"
+password = "Error404"
+online = False
+
+if username:
+    if password:
+        if online:
+            print("Logged")
+        else:
+            print("Offline")
+    else:
+        print("password required!!")
+else:
+    print("Enter username")
+
+
+#more sample
+score = 92
+extra_credit = 0
+
+if score > 90:
+    if extra_credit > 0:
+        print("A - Excellent!!")
+    else:
+        print("A with no credit hrs")
+elif score >= 80:
+    print("B, good trial")
+else:
+    print("Need to Improve!!")
